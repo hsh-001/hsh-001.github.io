@@ -7,15 +7,15 @@
   
   <title>1.5 | Hsh-001</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="从今天开始，学习汇编语言。 基础知识寄存器：cpu可以存储数据的元件，一个cpu有多个寄存器汇编语言组成：        汇编指令（机器码的助记符）（汇编语言的核心，决定汇编语言的特性）        伪指令（由编译器执行）        其他符号（由编译器识别）存储器：   cpu是计算器的核心部件    存储器被划分为若干个存储单元 每个存储单元从0开始编号cpu对数据的读写，进行三类信息的交">
+  <meta name="description" content="从今天开始，学习汇编语言。 基础知识 寄存器：cpu可以存储数据的元件，一个cpu有多个寄存器 汇编语言组成： - 汇编指令（机器码的助记符）（汇编语言的核心，决定汇编语言的特性）  - 伪指令（由编译器执行）  - 其他符号（由编译器识别）  存储器： - cpu是计算器的核心部件  - 存储器被划分为若干个存储单元 每个存储单元从0开始编号  cpu对数据的读写，进行三类信息的交互： - 存储">
 <meta property="og:type" content="article">
 <meta property="og:title" content="1.5">
 <meta property="og:url" content="http://yoursite.com/2021/01/06/1-5/index.html">
 <meta property="og:site_name" content="Hsh-001">
-<meta property="og:description" content="从今天开始，学习汇编语言。 基础知识寄存器：cpu可以存储数据的元件，一个cpu有多个寄存器汇编语言组成：        汇编指令（机器码的助记符）（汇编语言的核心，决定汇编语言的特性）        伪指令（由编译器执行）        其他符号（由编译器识别）存储器：   cpu是计算器的核心部件    存储器被划分为若干个存储单元 每个存储单元从0开始编号cpu对数据的读写，进行三类信息的交">
+<meta property="og:description" content="从今天开始，学习汇编语言。 基础知识 寄存器：cpu可以存储数据的元件，一个cpu有多个寄存器 汇编语言组成： - 汇编指令（机器码的助记符）（汇编语言的核心，决定汇编语言的特性）  - 伪指令（由编译器执行）  - 其他符号（由编译器识别）  存储器： - cpu是计算器的核心部件  - 存储器被划分为若干个存储单元 每个存储单元从0开始编号  cpu对数据的读写，进行三类信息的交互： - 存储">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2021-01-06T10:36:51.827Z">
-<meta property="article:modified_time" content="2021-01-06T10:36:51.823Z">
+<meta property="article:published_time" content="2021-01-06T10:47:52.148Z">
+<meta property="article:modified_time" content="2021-01-06T10:47:52.142Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -69,7 +69,7 @@
         <section id="main"><article id="post-1-5" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2021/01/06/1-5/" class="article-date">
-  <time datetime="2021-01-06T10:36:51.827Z" itemprop="datePublished">2021-01-06</time>
+  <time datetime="2021-01-06T10:47:52.148Z" itemprop="datePublished">2021-01-06</time>
 </a>
     
   </div>
@@ -89,8 +89,35 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>从今天开始，学习汇编语言。</p>
-<h3 id="基础知识"><a href="#基础知识" class="headerlink" title="基础知识"></a>基础知识</h3><p>寄存器：cpu可以存储数据的元件，一个cpu有多个寄存器<br>汇编语言组成：<br>        汇编指令（机器码的助记符）（汇编语言的核心，决定汇编语言的特性）<br>        伪指令（由编译器执行）<br>        其他符号（由编译器识别）<br>存储器：<br>   cpu是计算器的核心部件<br>    存储器被划分为若干个存储单元 每个存储单元从0开始编号<br>cpu对数据的读写，进行三类信息的交互：<br>    存储单元的地址（地址信息）<br>    器件的选择,读或写命令（控制信息）<br>    读或写的数据（数据信息）<br>cpu对外部器件的控制是通过控制总线来进行的。控制总线是一些不同控制线的集合,有多少控制总线，就意味着cpu提供了对外部件的多少种控制。<br>一个cpu由运算器、控制器、寄存器等器件组成，这些组件靠内部总线相连。<br>    内部总线 cpu内部<br>    外部总线 cpu和主板上其他器件。<br>8060cpu有14个寄存器<br>   AX,BX,CX,DX,SI,DI,SP,BP,IP,CS,SS,DS,ES,PSW<br>   AX可以分为AH和AL（前者填0)均可独立使用<br>   BX,CX,DX同理<br>16位结构cpu：<br>    运算器一次最多可以处理16位数据<br>    寄存器的最大宽度为16位<br>    寄存器和运算器之间的通路是16位的<br>基础地址+偏移地址=物理地址<br>段地址*16+偏移地址=物理地址<br>内存没有分段，段的划分来自cpu </p>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>今天是开始的第一天，只学了一些基础的概念</p>
+<h3 id="基础知识"><a href="#基础知识" class="headerlink" title="基础知识"></a>基础知识</h3><ol>
+<li>寄存器：cpu可以存储数据的元件，一个cpu有多个寄存器</li>
+<li>汇编语言组成：<pre><code> - 汇编指令（机器码的助记符）（汇编语言的核心，决定汇编语言的特性）
+ - 伪指令（由编译器执行）
+ - 其他符号（由编译器识别）</code></pre>
+</li>
+<li>存储器：<pre><code> - cpu是计算器的核心部件
+ - 存储器被划分为若干个存储单元 每个存储单元从0开始编号</code></pre>
+</li>
+<li>cpu对数据的读写，进行三类信息的交互：<pre><code> - 存储单元的地址（地址信息）
+ - 器件的选择,读或写命令（控制信息）
+ - 读或写的数据（数据信息）</code></pre>
+</li>
+<li>cpu对外部器件的控制是通过控制总线来进行的。控制总线是一些不同控制线的集合,有多少控制总线，就意味着cpu提供了对外部件的多少种控制。</li>
+<li>一个cpu由运算器、控制器、寄存器等器件组成，这些组件靠内部总线相连。<pre><code> - 内部总线 cpu内部
+ - 外部总线 cpu和主板上其他器件。</code></pre>
+</li>
+<li>8060cpu有14个寄存器<pre><code> - AX,BX,CX,DX,SI,DI,SP,BP,IP,CS,SS,DS,ES,PSW
+ - AX可以分为AH和AL（前者填0)均可独立使用
+ - BX,CX,DX同理</code></pre>
+</li>
+<li>16位结构cpu：<pre><code> - 运算器一次最多可以处理16位数据
+ - 寄存器的最大宽度为16位
+ - 寄存器和运算器之间的通路是16位的</code></pre>
+</li>
+<li>基础地址+偏移地址=物理地址</li>
+<li>段地址*16+偏移地址=物理地址</li>
+<li>内存没有分段，段的划分来自cpu <h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2>今天是开始的第一天，只学了一些基础的概念</li>
+</ol>
 
       
     </div>
