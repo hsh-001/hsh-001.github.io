@@ -7,15 +7,15 @@
   
   <title>1-7 | Hsh-001</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="###段寄存器  8060有四个段寄存器：CS,DS,SS,ES CS为代码段寄存器，IP为指令寄存器。 jump 某一合法寄存器 jump ax （类似与move IP，ax)  ###简单指令  move mov al，[0]  将数据直接送入寄存器  将一个寄存器中的内容送入另一个寄存器  mov 寄存器， 数据      mov ax,8  mov 寄存器， 寄存器    mov ax,b">
+  <meta name="description" content="段寄存器 8060有四个段寄存器：CS,DS,SS,ES CS为代码段寄存器，IP为指令寄存器。 jump 某一合法寄存器 jump ax （类似与move IP，ax)  简单指令 move mov al，[0]  将数据直接送入寄存器  将一个寄存器中的内容送入另一个寄存器  mov 寄存器， 数据      mov ax,8  mov 寄存器， 寄存器    mov ax,bx  mov 寄">
 <meta property="og:type" content="article">
 <meta property="og:title" content="1-7">
 <meta property="og:url" content="http://yoursite.com/2021/01/08/1-7/index.html">
 <meta property="og:site_name" content="Hsh-001">
-<meta property="og:description" content="###段寄存器  8060有四个段寄存器：CS,DS,SS,ES CS为代码段寄存器，IP为指令寄存器。 jump 某一合法寄存器 jump ax （类似与move IP，ax)  ###简单指令  move mov al，[0]  将数据直接送入寄存器  将一个寄存器中的内容送入另一个寄存器  mov 寄存器， 数据      mov ax,8  mov 寄存器， 寄存器    mov ax,b">
+<meta property="og:description" content="段寄存器 8060有四个段寄存器：CS,DS,SS,ES CS为代码段寄存器，IP为指令寄存器。 jump 某一合法寄存器 jump ax （类似与move IP，ax)  简单指令 move mov al，[0]  将数据直接送入寄存器  将一个寄存器中的内容送入另一个寄存器  mov 寄存器， 数据      mov ax,8  mov 寄存器， 寄存器    mov ax,bx  mov 寄">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2021-01-08T10:51:40.000Z">
-<meta property="article:modified_time" content="2021-01-08T11:06:47.171Z">
+<meta property="article:modified_time" content="2021-01-08T11:08:53.379Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -88,15 +88,13 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>###段寄存器</p>
-<ol>
+        <h3 id="段寄存器"><a href="#段寄存器" class="headerlink" title="段寄存器"></a>段寄存器</h3><ol>
 <li>8060有四个段寄存器：CS,DS,SS,ES</li>
 <li>CS为代码段寄存器，IP为指令寄存器。</li>
 <li>jump 某一合法寄存器</li>
 <li>jump ax （类似与move IP，ax)</li>
 </ol>
-<p>###简单指令</p>
-<ol>
+<h3 id="简单指令"><a href="#简单指令" class="headerlink" title="简单指令"></a>简单指令</h3><ol>
 <li>move<pre><code> mov al，[0]  将数据直接送入寄存器  将一个寄存器中的内容送入另一个寄存器
  mov 寄存器， 数据      mov ax,8
  mov 寄存器， 寄存器    mov ax,bx
@@ -116,8 +114,7 @@
  sub 内存单元， 寄存器  sub [0],ax</code></pre>
 </li>
 </ol>
-<p>###栈</p>
-<ol>
+<h3 id="栈"><a href="#栈" class="headerlink" title="栈"></a>栈</h3><ol>
 <li>SS:存放栈顶的段地址;  SP:存放栈顶的偏移地址;</li>
 <li>pop ax 将SS:SP送入ax，SP=SP+2</li>
 <li>push ax SP=SP-2</li>
