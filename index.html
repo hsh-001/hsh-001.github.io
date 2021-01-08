@@ -64,6 +64,81 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-1-7" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2021/01/08/1-7/" class="article-date">
+  <time datetime="2021-01-08T10:51:40.000Z" itemprop="datePublished">2021-01-08</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/01/08/1-7/">1-7</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>###段寄存器</p>
+<ol>
+<li>8060有四个段寄存器：CS,DS,SS,ES</li>
+<li>CS为代码段寄存器，IP为指令寄存器。</li>
+<li>jump 某一合法寄存器</li>
+<li>jump ax （类似与move IP，ax)</li>
+</ol>
+<p>###简单指令</p>
+<ol>
+<li>move<pre><code> mov al，[0]  将数据直接送入寄存器  将一个寄存器中的内容送入另一个寄存器
+ mov 寄存器， 数据      mov ax,8
+ mov 寄存器， 寄存器    mov ax,bx
+ mov 寄存器， 内存单元  mov ax,[0]
+ mov 内存单元，寄存器   mov [0],ax
+ mov 段寄存器，寄存器   mov ds,ax
+ mov 寄存器， 段寄存器</code></pre>
+</li>
+<li>add<pre><code> add 寄存器， 数据      add ax,8
+ add 寄存器， 寄存器    add ax,bx
+ add 寄存器， 内存单元  add ax,[0]
+ add 内存单元， 寄存器  add [0],ax</code></pre>
+</li>
+<li>sub<pre><code> sub 寄存器， 数据      sub x,9
+ sub 寄存器， 寄存器    sub ax,bx
+ sub 寄存器， 内存单元  sub ax,[0]
+ sub 内存单元， 寄存器  sub [0],ax</code></pre>
+</li>
+</ol>
+<p>###栈</p>
+<ol>
+<li>SS:存放栈顶的段地址;  SP:存放栈顶的偏移地址;</li>
+<li>pop ax 将SS:SP送入ax，SP=SP+2</li>
+<li>push ax SP=SP-2</li>
+<li>push ds 将一个段寄存器的数据入栈</li>
+<li>pop es  出栈，用一个段寄存器接受出栈的数据</li>
+<li>push [0] 将一个内存单元的字入栈</li>
+<li>pop [0] 出栈，用一个内存字单元接收出栈的数据</li>
+</ol>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>昨天和今天因为一些烦心事，没有怎么学，导致这两天学习进度慢了下来。从明天开始，要正式进入居家隔离了，学习的进度应该就会加速了。努力加油吧！！！</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2021/01/08/1-7/" data-id="ckjo6d0cf0000hjpvgrbme9or" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-1-5" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2021/01/06/1-5/" class="article-date">
@@ -208,6 +283,10 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2021/01/08/1-7/">1-7</a>
+          </li>
         
           <li>
             <a href="/2021/01/06/1-5/">1.5</a>

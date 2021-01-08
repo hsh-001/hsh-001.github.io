@@ -5,17 +5,17 @@
   
 
   
-  <title>Hello World | Hsh-001</title>
+  <title>1-7 | Hsh-001</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+  <meta name="description" content="###段寄存器  8060有四个段寄存器：CS,DS,SS,ES CS为代码段寄存器，IP为指令寄存器。 jump 某一合法寄存器 jump ax （类似与move IP，ax)  ###简单指令  move mov al，[0]  将数据直接送入寄存器  将一个寄存器中的内容送入另一个寄存器  mov 寄存器， 数据      mov ax,8  mov 寄存器， 寄存器    mov ax,b">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2020/10/31/hello-world/index.html">
+<meta property="og:title" content="1-7">
+<meta property="og:url" content="http://yoursite.com/2021/01/08/1-7/index.html">
 <meta property="og:site_name" content="Hsh-001">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="###段寄存器  8060有四个段寄存器：CS,DS,SS,ES CS为代码段寄存器，IP为指令寄存器。 jump 某一合法寄存器 jump ax （类似与move IP，ax)  ###简单指令  move mov al，[0]  将数据直接送入寄存器  将一个寄存器中的内容送入另一个寄存器  mov 寄存器， 数据      mov ax,8  mov 寄存器， 寄存器    mov ax,b">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-10-31T05:37:42.722Z">
-<meta property="article:modified_time" content="2020-10-31T05:37:42.722Z">
+<meta property="article:published_time" content="2021-01-08T10:51:40.000Z">
+<meta property="article:modified_time" content="2021-01-08T11:06:47.171Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -66,10 +66,10 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-1-7" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2020/10/31/hello-world/" class="article-date">
-  <time datetime="2020-10-31T05:37:42.722Z" itemprop="datePublished">2020-10-31</time>
+    <a href="/2021/01/08/1-7/" class="article-date">
+  <time datetime="2021-01-08T10:51:40.000Z" itemprop="datePublished">2021-01-08</time>
 </a>
     
   </div>
@@ -80,7 +80,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      Hello World
+      1-7
     </h1>
   
 
@@ -88,24 +88,50 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+        <p>###段寄存器</p>
+<ol>
+<li>8060有四个段寄存器：CS,DS,SS,ES</li>
+<li>CS为代码段寄存器，IP为指令寄存器。</li>
+<li>jump 某一合法寄存器</li>
+<li>jump ax （类似与move IP，ax)</li>
+</ol>
+<p>###简单指令</p>
+<ol>
+<li>move<pre><code> mov al，[0]  将数据直接送入寄存器  将一个寄存器中的内容送入另一个寄存器
+ mov 寄存器， 数据      mov ax,8
+ mov 寄存器， 寄存器    mov ax,bx
+ mov 寄存器， 内存单元  mov ax,[0]
+ mov 内存单元，寄存器   mov [0],ax
+ mov 段寄存器，寄存器   mov ds,ax
+ mov 寄存器， 段寄存器</code></pre>
+</li>
+<li>add<pre><code> add 寄存器， 数据      add ax,8
+ add 寄存器， 寄存器    add ax,bx
+ add 寄存器， 内存单元  add ax,[0]
+ add 内存单元， 寄存器  add [0],ax</code></pre>
+</li>
+<li>sub<pre><code> sub 寄存器， 数据      sub x,9
+ sub 寄存器， 寄存器    sub ax,bx
+ sub 寄存器， 内存单元  sub ax,[0]
+ sub 内存单元， 寄存器  sub [0],ax</code></pre>
+</li>
+</ol>
+<p>###栈</p>
+<ol>
+<li>SS:存放栈顶的段地址;  SP:存放栈顶的偏移地址;</li>
+<li>pop ax 将SS:SP送入ax，SP=SP+2</li>
+<li>push ax SP=SP-2</li>
+<li>push ds 将一个段寄存器的数据入栈</li>
+<li>pop es  出栈，用一个段寄存器接受出栈的数据</li>
+<li>push [0] 将一个内存单元的字入栈</li>
+<li>pop [0] 出栈，用一个内存字单元接收出栈的数据</li>
+</ol>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>昨天和今天因为一些烦心事，没有怎么学，导致这两天学习进度慢了下来。从明天开始，要正式进入居家隔离了，学习的进度应该就会加速了。努力加油吧！！！</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/10/31/hello-world/" data-id="ckhrc2po70002r0vs16f88out" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2021/01/08/1-7/" data-id="ckjo6d0cf0000hjpvgrbme9or" class="article-share-link">Share</a>
       
       
     </footer>
@@ -114,15 +140,11 @@
     
 <nav id="article-nav">
   
-    <a href="/2021/01/06/1-5/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          1.5
-        
-      </div>
-    </a>
   
+    <a href="/2021/01/06/1-5/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">1.5</div>
+    </a>
   
 </nav>
 
