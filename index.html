@@ -64,6 +64,67 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-1-9" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2021/01/10/1-9/" class="article-date">
+  <time datetime="2021-01-10T11:03:07.000Z" itemprop="datePublished">2021-01-10</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/01/10/1-9/">1-9</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <ol>
+<li>栈是我们自己定义的，cpu只知道正在访问和即将访问的地址<h3 id="第一个程序"><a href="#第一个程序" class="headerlink" title="第一个程序"></a>第一个程序</h3></li>
+<li>编写-&gt;编译链接-&gt;执行</li>
+<li>一个有意义的汇编程序至少有一个段</li>
+<li>汇编程序组成:<pre><code>伪指令  编译器处理
+汇编指令 编译为机器码</code></pre>
+</li>
+<li>一个标号指代了一个地址</li>
+<li>编程运算2^3<pre><code>定义一个段
+实现处理任务
+程序结束
+段与寄存器关联</code></pre>
+</li>
+<li>代码<pre><code> assume cs:abc
+ abc segment
+ mov ax,2
+ add ax,ax
+ add ax,ax
+ abc ends
+ end</code></pre>
+</li>
+<li>程序返回<br> 在程序的末尾添加返回的程序段<br>   mov ax,4c00H<br>   int 21H</li>
+<li>段结束、程序结束、程序返回<br> 目的                     相关指令                     指令性质     指令执行者<br> 通知编译器一个段结束    段名 ends               伪指令       编译时，由编译器执行<br> 通知编译器程序结束      end                    伪指令       编译时，由编译器执行<br> 程序返回                 mov ax，4c00H int 21H   汇编指令     编译时，由cpu执行</li>
+<li>edit -&gt; masm -&gt;  link -&gt; command -&gt; cpu</li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2021/01/10/1-9/" data-id="ckjr1aamj0000f9pvcxpe05qo" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-1-7" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2021/01/08/1-7/" class="article-date">
@@ -280,6 +341,10 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2021/01/10/1-9/">1-9</a>
+          </li>
         
           <li>
             <a href="/2021/01/08/1-7/">1-7</a>
